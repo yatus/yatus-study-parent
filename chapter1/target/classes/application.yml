@@ -3,12 +3,14 @@ server:
 spring:
   datasource:
     master:
-      jdbc-url: jdbc:mysql://localhost:3306/test
-      username: root
-      password: yatus
+      jdbc-url: jdbc:mysql://192.168.213.104:3306/test
+      username: yatu
+      password: nopass
       driver-class-name: com.mysql.jdbc.Driver
     slave:
-      jdbc-url: jdbc:mysql://localhost:3306/test
-      username: root
-      password: yatus
+      jdbc-url: jdbc:mysql://192.168.213.105:3306/test
+      username: yatu
+      password: nopass
       driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
